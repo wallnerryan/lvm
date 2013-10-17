@@ -38,5 +38,5 @@ while [ $VOL -lt $VOLUMES ];
 do
     #create volumes
     lvcreate -L $SIZE -n vol$VOL $VOL_GROUP;
-    VOL=$(( $VOL + 1 ));
-done
+    VOL=$(( $VOL  1 ));
+done 

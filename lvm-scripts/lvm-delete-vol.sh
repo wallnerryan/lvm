@@ -37,5 +37,5 @@ while [ $FROM_VOL -le $TO_VOL ];
 do
     #create volumes
     lvremove -f /dev/$VOL_GROUP/vol$FROM_VOL;
-    FROM_VOL=$(( $FROM_VOL + 1 ));
+    FROM_VOL=$(( $FROM_VOL  1 ));
 done
